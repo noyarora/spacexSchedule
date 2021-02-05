@@ -6,8 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start -p $PORT",
-    "heroku-postbuild": "npm run build",
-    "lint": "./node_modules/.bin/eslint --fix components pages"
+    "lint": "./node_modules/.bin/eslint --fix components pages",
+    "heroku-postbuild": "npm run build"
   },
   "dependencies": {
     "next": "10.0.6",
