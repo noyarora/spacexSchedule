@@ -1,0 +1,15 @@
+.FilterButton {
+    background: #c5e09b;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 5px;
+    line-height: 1;
+    flex: 0 38%;
+    margin: 5px 0;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+.Active {
+    background: #7cbc27;
+}

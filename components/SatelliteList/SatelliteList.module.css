@@ -1,0 +1,4 @@
+.SatelliteContainer {
+    display: flex;
+    flex-wrap: wrap;
+}

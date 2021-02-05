@@ -1,0 +1,40 @@
+.MainContainer {
+    display: flex;
+    margin-top: 20px;
+}
+
+.SideBarBox {
+    max-width: 21%;
+    flex: 0 0 21%;
+    margin-right: 25px;
+    padding-top: 20px;
+}  
+
+.SatelliteListBox {
+    flex: 1;
+}
+
+.NoData {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+@media screen and (max-width: 700px) {
+.MainContainer {
+    flex-direction: column;
+}
+
+.SideBarBox {
+    max-width: 100%;
+    margin: 0 0 30px;
+    flex: 0 0 100%;
+}
+}
+
+@media screen and (min-width: 701px) and (max-width: 1024px) {
+.SideBarBox {
+    max-width: 29%;
+    flex: 0 0 29%;
+}
+}

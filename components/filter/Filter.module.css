@@ -1,0 +1,30 @@
+.FilterBox {
+    margin-top: 16px;
+}
+
+.FilterBox Header h3 {
+    text-transform: capitalize;
+    text-align: center;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 5px;
+    margin: 0 10%;
+    font-weight: normal;
+    font-size: 1rem;
+}
+
+.FilterBox .FilterList {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.ClearButton {
+    display: flex;
+    justify-content: center;
+}
+
+.ClearButton button {
+    background: #d9534f;
+    color: #fff;
+}

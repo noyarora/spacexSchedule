@@ -1,0 +1,38 @@
+.SatelliteContainer {
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    padding: 20px 0;
+    flex: 1 0 auto;
+}
+
+.DetailText {
+    color: #454a8b;
+    margin: 0 5px;
+}
+
+.SatelliteDetails {
+    margin: 0 20px;
+}
+
+.SatelliteDetails .InfoList {
+    margin: 10px 0;
+}
+
+.SatelliteImageBox {
+    background: #f2f2f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+    margin: 0 20px;
+}
+
+.SatelliteImageBox img{
+    max-width: 100%;
+}
+
+.SatelliteDetails h3 {
+    color: #454a8b
+}
