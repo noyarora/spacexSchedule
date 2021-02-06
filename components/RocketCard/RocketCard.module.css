@@ -36,3 +36,9 @@
 .RocketDetails h3 {
     color: #454a8b
 }
+
+@media screen and (max-width: 700px) {
+    .RocketContainer {
+        width: 100%;
+    }
+}
