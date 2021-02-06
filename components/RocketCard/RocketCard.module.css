@@ -1,4 +1,4 @@
-.SatelliteContainer {
+.RocketContainer {
     background: #fff;
     display: flex;
     flex-direction: column;
@@ -12,15 +12,15 @@
     margin: 0 5px;
 }
 
-.SatelliteDetails {
+.RocketDetails {
     margin: 0 20px;
 }
 
-.SatelliteDetails .InfoList {
+.RocketDetails .InfoList {
     margin: 10px 0;
 }
 
-.SatelliteImageBox {
+.RocketImageBox {
     background: #f2f2f2;
     display: flex;
     justify-content: center;
@@ -29,10 +29,10 @@
     margin: 0 20px;
 }
 
-.SatelliteImageBox img{
+.RocketImageBox img{
     max-width: 100%;
 }
 
-.SatelliteDetails h3 {
+.RocketDetails h3 {
     color: #454a8b
 }

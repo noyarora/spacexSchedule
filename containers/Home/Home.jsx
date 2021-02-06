@@ -3,7 +3,7 @@ import { withRouter } from 'next/router';
 import SideBar from '../../components/SideBar/SideBar';
 import Loader from '../../components/Loader/Loader';
 import MetaHead from '../../components/MetaHead';
-import SatelliteList from '../../components/SatelliteList/SatelliteList';
+import RocketList from '../../components/RocketList/RocketList';
 import { createSearchString, fetchData, formatSpacexData } from '../../util/util';
 import classes from './Home.module.css';
 import {
@@ -13,7 +13,7 @@ import {
 } from '../../components/constants';
 
 const Home = ({ rocketList, router, apiError }) => {
-  const [satelliteData, setSatelliteData] = useState([]);
+  const [rocketData, setRocketData] = useState([]);
   const [yearFilter, setYearFilter] = useState('');
   const [launchFilter, setLaunchFilter] = useState('');
   const [landFilter, setLandFilter] = useState('');
@@ -27,7 +27,7 @@ const Home = ({ rocketList, router, apiError }) => {
     fetchData(queryString)
       .then((data) => {
         const fomattedData = formatSpacexData(data);
-        setSatelliteData(fomattedData);
+        setRocketData(fomattedData);
         setIsLoading(false);
         setErrorMessage('');
       })
@@ -66,7 +66,7 @@ const Home = ({ rocketList, router, apiError }) => {
 
   useEffect(() => {
     router.replace('');
-    setSatelliteData(rocketList);
+    setRocketData(rocketList);
     apiError ? setErrorMessage(errorMsg) : undefined;
     setIsLoading(false);
   }, []);
@@ -77,12 +77,12 @@ const Home = ({ rocketList, router, apiError }) => {
       <div className={classes.SideBarBox}>
         <SideBar onFilterSelect={filterChangeHandler} />
       </div>
-      <div className={`${classes.SatelliteListBox} ${isLoading || satelliteData.length === 0 ? classes.NoData : ''}`}>
+      <div className={`${classes.RocketListBox} ${isLoading || rocketData.length === 0 ? classes.NoData : ''}`}>
         {isLoading
           ? <Loader />
-          : satelliteData.length === 0
+          : rocketData.length === 0
             ? <p>{errorMessage || 'There are no records for your selected query'}</p>
-            : <SatelliteList satellites={satelliteData} />}
+            : <RocketList rockets={rocketData} />}
       </div>
     </div>
   );

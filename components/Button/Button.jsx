@@ -17,7 +17,8 @@ const Button = ({ btnName, btnGroup, selectedFilter, changeFilter }) => (
 
 Button.propTypes = {
   btnName: PropTypes.string,
-  selectedFilter: PropTypes.string
+  selectedFilter: PropTypes.string,
+  btnGroup: PropTypes.string
 };
 
 export default Button;

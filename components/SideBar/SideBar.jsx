@@ -1,5 +1,5 @@
 import React from 'react';
-import Filter from '../filter/Filter';
+import Filter from '../Filter/Filter';
 import filterData from '../filterData';
 import classes from './SideBar.module.css';
 

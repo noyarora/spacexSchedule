@@ -1,12 +1,10 @@
 import React, { useState } from 'react';
-import Button from '../button/Button';
+import Button from '../Button/Button';
 import PropTypes from "prop-types";
 import classes from './Filter.module.css';
 import { CLEAR_FILTER } from '../constants';
 
-const Filter = ({
-  filterHeading, filters, onFilterChange, filterId,
-}) => {
+const Filter = ({filterHeading, filters, onFilterChange, filterId}) => {
   const [selectedOption, setSelectedOption] = useState('');
 
   const onFilterSelectHandler = (optionSelected) => {

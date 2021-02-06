@@ -29,7 +29,8 @@ export const formatSpacexData = (data) => {
             launchYear: rocket.launch_year, 
             launchSuccess: rocket.launch_success, 
             tbd: rocket.tbd, 
-            rocketImage: rocket.links.mission_patch_small
+            rocketImage: rocket.links.mission_patch_small,
+            rocketId: rocket.rocket.rocket_id
         }
     });
 }

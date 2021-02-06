@@ -1,5 +1,6 @@
 import classes from '../styles/Home.module.css';
 import Home from '../containers/Home/Home';
+import Footer from '../components/Footer';
 import { formatSpacexData } from '../util/util';
 
 const App = ({ spacexData, errorInfo }) => {
@@ -7,10 +8,11 @@ const App = ({ spacexData, errorInfo }) => {
     <div className={classes.App}>
       <div className={classes.MainBody}>
         <header className={classes.AppHeader}>
-          <h1>spaceX launch programs</h1>
+          <h1 className="text-capitalize" style={{margin: 0}}>spaceX launch programs</h1>
         </header>
         <Home rocketList={spacexData} apiError={errorInfo} />
       </div>
+      <Footer />
     </div>
   );
 };
