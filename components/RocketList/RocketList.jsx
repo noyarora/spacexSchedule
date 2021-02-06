@@ -9,9 +9,7 @@ const RocketList = ({ rockets }) => {
   const listUpdate = rockets.map((val) => (
     <Lazyload 
       className={classes.RocketContainer} 
-      key={val.rocketId + val.flightNumber}
-      offset={-100}
-      placeholder={<Loader />}>
+      key={val.rocketId + val.flightNumber}>
       <RocketCard rocketInfo={val} />
     </Lazyload>
   ));

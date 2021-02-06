@@ -18,15 +18,15 @@
     border-color: #000 transparent transparent transparent;
 }
 
-.Loader div:nth-child(1) {
+.Loader1 {
     animation-delay: -0.45s;
 }
 
-.Loader div:nth-child(2) {
+.Loader2 {
     animation-delay: -0.3s;
 }
 
-.Loader div:nth-child(3) {
+.Loader3 {
     animation-delay: -0.15s;
 }
 

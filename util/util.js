@@ -28,7 +28,7 @@ export const formatSpacexData = (data) => {
             missionId: rocket.mission_id, 
             launchYear: rocket.launch_year, 
             launchSuccess: rocket.launch_success, 
-            tbd: rocket.tbd, 
+            landSuccess: rocket.rocket.first_stage.cores[0].land_success, 
             rocketImage: rocket.links.mission_patch_small,
             rocketId: rocket.rocket.rocket_id
         }

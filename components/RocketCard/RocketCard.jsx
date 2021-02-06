@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 
 const RocketCard = ({ rocketInfo }) => {
   const {
-    missionName, flightNumber, missionId, launchYear, launchSuccess, tbd, rocketImage,
+    missionName, flightNumber, missionId, launchYear, launchSuccess, landSuccess, rocketImage,
   } = rocketInfo;
 
   return (
@@ -51,7 +51,7 @@ const RocketCard = ({ rocketInfo }) => {
           <strong>
             <span className="text-capitalize">successful landing:</span>
           </strong>
-          <span className={classes.DetailText}>{String(tbd)}</span>
+          <span className={classes.DetailText}>{landSuccess ? String(landSuccess) : 'NA'}</span>
         </div>
       </div>
     </div>
