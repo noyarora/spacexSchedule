@@ -10,7 +10,7 @@ import {
   FILTER_LAUNCH_YEAR,
   FILTER_LAUNCH_SUCCESSFUL,
   FILTER_LANDING_SUCCESSFUL,
-} from '../../components/constants';
+} from '../../constants/filterConstants';
 
 const Home = ({ rocketList, router, apiError }) => {
   const [rocketData, setRocketData] = useState([]);

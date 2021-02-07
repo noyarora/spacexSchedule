@@ -1,4 +1,4 @@
-import { CLEAR_FILTER } from '../components/constants';
+import { CLEAR_FILTER } from '../constants/filterConstants';
 
 export const  createSearchString = (yearFilter, launchSuccessFilter, landSuccessFilter,) => {
     let string = "?";

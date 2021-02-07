@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start -p $PORT",
+    "start": "next start",
     "lint": "./node_modules/.bin/eslint --fix components pages",
     "heroku-postbuild": "npm run build"
   },

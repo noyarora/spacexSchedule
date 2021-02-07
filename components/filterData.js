@@ -2,7 +2,7 @@ import {
   FILTER_LAUNCH_YEAR,
   FILTER_LAUNCH_SUCCESSFUL,
   FILTER_LANDING_SUCCESSFUL,
-} from './constants';
+} from '../constants/filterConstants';
 
 const filterData = [
   {
