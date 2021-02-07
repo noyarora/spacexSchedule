@@ -1,34 +1,69 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# SpaceX Schedule App               
 
-## Getting Started
+Most up-to-date schedule of all upcoming SpaceX launches.
 
-First, run the development server:
+![app_screen](https://user-images.githubusercontent.com/10138586/107124875-3e228980-68cc-11eb-9d11-1cc39be2dd94.png)
 
-```bash
-npm run dev
-# or
-yarn dev
+
+### Link to App
+[SpaceX Schedule](https://spacex-schedule-noy.herokuapp.com/)
+
+
+### Tech
+
+SpaceX schedule app uses a number of open source projects to work properly:
+
+* React
+* Next JS - For server side rendering
+* React Lazyload - For lazyloading rocket list
+* CSS Modules
+* ESLint
+* Airbnb ESLint
+* SpaceX API
+
+
+### Installation
+
+Clone down this repository. You will need node and npm installed globally on your machine.
+
+Install the dependencies and devDependencies.
+
+```sh
+$ npm install
+```
+Start the server
+
+```sh
+$ npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Build on local
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+```sh
+$ npm run build
+$ npm run start
+```
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+### Motive
 
-## Learn More
+This was a 4-5 days long project built during an interview process. Project goals included using technologies learned and worked up until this point.
 
-To learn more about Next.js, take a look at the following resources:
+Originally I wanted to build an application that allowed users to pull data from the SpaceX API based on available filter, such as 'Launch year'. I started this process by using the create-next-app boilerplate, then adding react-lazyload.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+At the end of the day, the technologies implemented in this project are React, Next JS, and a significant amount of VanillaJS, JSX, and CSS. I chose to use the create-next-app boilerplate to minimize initial setup and invest more time in diving into other stuff. 
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+### Roadmap
 
-## Deploy on Vercel
+ - Write unit tests
+ - Add Night Mode
+ 
+### Lighthouse Score
+![heroku_light](https://user-images.githubusercontent.com/10138586/107124843-13d0cc00-68cc-11eb-9a10-86462239804d.png)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+ 
+
+
+
+
